@@ -3,22 +3,20 @@ import tabulate
 import time
 from librerias.lib_empresas import *
 
-# Cargar datos desde el archivo
 f = open('empresas.txt', 'r')
 str_empresas = f.read()
 f.close()
 
-# Cargar datos en la lista
 lista_empresas = cargar_datos(str_empresas)
 
 ANCHO = 50
 opcion = 0
 
 while opcion < 5:
-    os.system("clear")  # Limpiar la pantalla
-    mostrar_menu(ANCHO)  # Mostrar el menú
-    opcion = int(input("INGRESE OPCIÓN: "))  # Leer opción del usuario
-    os.system("clear")  # Limpiar la pantalla después de la opción
+    os.system("clear")  
+    mostrar_menu(ANCHO)  
+    opcion = int(input("INGRESE OPCIÓN: "))  
+    os.system("clear")  
 
     if opcion == 1:
         print("="*ANCHO)

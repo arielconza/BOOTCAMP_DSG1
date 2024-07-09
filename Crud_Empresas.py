@@ -1,7 +1,7 @@
 import os
 import tabulate
 import time
-from librerias.lib_empresas import buscar_empresa, mostrar_menu, cargar_datos, grabar_datos
+from librerias.lib_empresas import *
 
 # Cargar datos desde el archivo
 f = open('empresas.txt', 'r')
